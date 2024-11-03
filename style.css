@@ -107,23 +107,22 @@ label {
   font-style: normal;
 	color:  #333;
 }
-input{
-	margin: 10px;
-	margin-left: 10px;
-	height: 25px;
-	border: 1px solid #ccc;
-  transition: border-color 0.3s, box-shadow 0.3s;
-	font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
-	color:  #333;
-	padding: 6px;
+input, textarea {
+    margin: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    padding: 8px; /* Increase padding for better aesthetics */
+    width: calc(100% - 22px); /* Ensures full width minus padding */
 }
 input:hover{
 	border-color: #333;
 	outline: none;
 }
-textarea{
+/* textarea{
 	height: 150px;
 	margin-left: 10px;
 	width: 200px;
@@ -133,7 +132,7 @@ textarea{
   font-style: normal;
 	color:  #333;
 	padding: 0px;
-}
+} */
 textarea:hover{
 	border-color: #333;
 	outline: none;
