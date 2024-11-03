@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#Resume-Preview{
+    border:none;
+  border-radius: 8px;
+	background-color: #fff;
+	 width: 270px;
+	 margin: 30px auto;
+	 padding: 20px;
+	 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+}
+#shareable-link {
+   visibility: hidden;
+    /* margin: 10px 0; 
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  */
+}
+
+#download-pdf {
+    padding: 10px 15px;
+    background-color: #157759; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+		margin-left: 400px;
+		margin-bottom: 30px;
+}
+
+#download-pdf:hover {
+    background-color:#53ab8b;
+}
+
+#Resume-Preview h2, #Resume-Preview h3 {
+    text-align: center;
+		color: #53ab8b;
+		font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#Resume-Preview p, #Resume-Preview ul {
+    line-height: 1.6;
+    margin: 10px 0;
+		text-decoration-color:#53ab8b;
+		font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#Resume-Preview .profile-picture { 
+    display: block;
+    margin: 0 auto 10px; 
+    border-radius: 10px; 
+}
+
+#Resume-Preview img {
+    display: block;
+    width: 200px !important;
+		height: 200px!important;
+		object-fit: cover;
+    margin:  auto auto; 
+    border-radius: 10px;
+		border: 2px solid #53ab8b;
+}
+.ResumeGenerate{
+	background-color:#157759;
+	color: #fff;
+	padding: 10px 8px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	width: 200px;
+	margin-left: 10px;
+	transition: 0.4s ease;
+	font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.ResumeGenerate:hover{
+	background-color: #53ab8b;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+#resume-container{
+   background-color: #fff;
+	 width: 270px;
+	 margin: 30px auto;
+	 padding: 20px;
+	 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+label {
+	margin: 10px;
+	margin-left: 10px;
+	font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+	color:  #333;
+}
+input{
+	margin: 10px;
+	margin-left: 10px;
+	height: 25px;
+	border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+	font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+	color:  #333;
+	padding: 6px;
+}
+input:hover{
+	border-color: #333;
+	outline: none;
+}
+textarea{
+	height: 150px;
+	margin-left: 10px;
+	width: 200px;
+	border: 1px solid #ccc;
+	font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+	color:  #333;
+	padding: 0px;
+}
+textarea:hover{
+	border-color: #333;
+	outline: none;
+}
+.addskillbutton{
+	background-color:#157759;
+	color: #fff;
+	padding: 10px 8px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	letter-spacing: 0.7px;
+	margin-top: 10px;
+	margin-left: 10px;
+	transition: 0.4s ease;
+}
+.addskillbutton:hover{
+	background-color: #53ab8b;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+.file-input{
+	padding: 20px;
+	cursor: pointer;
+	border: none;
+}
+.heading{
+	font-family: "Poppins", serif;
+  font-weight: 300;
+	letter-spacing: 1px;
+	margin-left: 9px;
+	font-size: 18px;
+	margin-bottom: 15px;
+  font-style: normal;
+	color:  #333;
+	margin-top: 10px;
+}
+input[type="file"]{
+ padding: 0;
+ height: 25px;
+}
+@media (max-width: 768px) {
+    #download-pdf {
+       margin-left: 60px; 
+			 margin-bottom: 20px;
+			 margin-top: 10px;
+    }
+}

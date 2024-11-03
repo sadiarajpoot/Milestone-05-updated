@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shareable Resume Builder</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="resume-container">
+		<!-- Personal Information Section -->
+		<div class="heading"><h3>Personal Information</h3><hr></div>
+		<label for="username">User Name URL :</label>
+			<input type="text" name="username" id="username" required placeholder="Enter Your User Name"><br>
+		<label for="Picture">Upload Profile Picture :</label><br/>
+		<input type="file" id="Picture" class="file-input" name="Picture" required><br/>
+
+		<label for="JobName">Job Name :</label><br/>
+		<input type="text" id="JobName" name="JobName" required><br/>
+
+		<label for="FirstName">First Name :</label><br/>
+		<input type="text" id="FirstName" name="FirstName" required placeholder="John"><br/>
+
+		<label for="lastName">Last Name :</label><br/>
+		<input type="text" id="lastName" name="lastName" required placeholder="Thomas"><br/>
+
+		<label for="Email">Email Address :</label><br/>
+		<input type="email" id="Email" name="Email" required placeholder="example@gmail.com"><br/>
+
+		<label for="Address">Address :</label><br/>
+		<input type="text" id="Address" name="Address" required placeholder="Main Street"><br/>
+
+		<label for="Country">Country :</label><br/>
+		<input type="text" id="Country" name="Country" required placeholder="Pakistan"><br/>
+
+		<label for="City">City :</label><br/>
+		<input type="text" id="City" name="City" required placeholder="Karachi"><br/>
+
+		<label for="PhoneNumber">Phone Number :</label><br/>
+		<input type="tel" id="PhoneNumber" name="PhoneNumber" required placeholder="0324-9099759"><br/>
+
+		<!-- Work Experience Section -->
+		<div class="heading"><h3>Work Experience</h3><hr></div>
+		<label for="CompanyName">Company Name:</label><br/>
+		<input type="text" id="CompanyName" name="CompanyName" required placeholder="ABC Company"><br/>
+
+		<label for="YourLastJob">Your Last Job:</label><br/>
+		<input type="text" id="YourLastJob" name="YourLastJob" required placeholder="Web Developer"><br/>
+
+		<label for="JobDescription">Job Description:</label><br/>
+		<textarea id="JobDescription" name="JobDescription" rows="4" required></textarea><br/>
+
+		<!-- Skills Section -->
+		<div class="heading"><h3>Skills</h3><hr></div>
+		<div id="AddSkillsContainer" class="AddSkillsContainer">
+			<input type="text" name="Skill" placeholder="Enter Your Skill"><br/>
+			<button type="button" id="AddSkillButton" class="addskillbutton">Add Your Skills</button><br/>
+		</div>
+
+		<!-- Education Section -->
+		<div class="heading"><h3>Education</h3><hr></div>
+		<label for="InstituteName">Institute Name:</label><br/>
+		<input type="text" id="InstituteName" name="InstituteName" required placeholder="Institute Name"><br/>
+
+		<label for="Degree">Degree:</label><br/>
+		<input type="text" id="Degree" name="Degree" required placeholder="Bachelor's in CS"><br/>
+
+		<label for="YearsOfEducation">Years of Education:</label><br/>
+		<input type="text" id="YearsOfEducation" name="YearsOfEducation" required placeholder="16 Years"><br/>
+
+		<label for="EducationTextArea">Education Description:</label><br/>
+		<textarea id="EducationTextArea" name="EducationTextArea" rows="5" required></textarea><br/>
+
+		<button type="submit" class="ResumeGenerate"><b>Generate Resume</b></button>
+	</form>
+
+	<div id="Resume-Preview"></div>
+<br>
+	<!-- URL resume Link / Download button -->
+<div id="shareable-link-container" style="display:none;">
+    <a href="#" id="shareable-link" target="_blank"></a>
+    <button id="download-pdf"><strong>Download as PDF</strong></button>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
